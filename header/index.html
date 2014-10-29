@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>VnSharing Radio - Header</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<style type="text/css">
+html, body {
+	font-family: 'Tahoma', sans-serif;
+	line-height: 25px;
+	padding: 0;
+	margin: 0;
+	font-weight: bold;
+}
+img{	vertical-align: text-top;}
+a {text-decoration:none; }
+a:hover {text-decoration:underline;}
+#page {
+	width: 728px;
+	margin: 0 auto;
+	margin-top: -2px;
+	background-color: #FFF;
+}
+.ticker {
+	width: 728px;
+	height: 30px;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+}
+.ticker li {
+	height: 30px;
+	padding: 0px;
+	margin: 0px 0px;
+}
+</style>
+</head>
+<body>
+
+<div id="page">
+
+  <ul id="ticker_01" class="ticker">
+  <!-- Thên cái gì thì copy 1 cái li xuống rồi sửa lại nhé -->
+  
+  
+    <li>
+      <a href="http://vnsharing.net/forum/announcement.php?f=1127" target="_blank"><font size="4" color="DarkOrange">Nhạc random</font></a>
+    </li>
+    
+    <li>
+      <a href="http://vnsharing.net/forum/showthread.php?t=711230" target="_blank"><font size="4" color="DarkOrange">[Game tuần - Kì 5] Lăn cùng Radio</font></a>
+    </li>
+    
+    <li>
+      <a href="http://vnsharing.net/forum/showthread.php?t=708689" target="_blank"><font size="4" color="DarkOrange">Đề cử và vote cho Bảng xếp hạng kì 107</font></a>
+    </li>
+    
+    <li>
+      <a href="http://vnsharing.net/forum/showthread.php?t=705704" target="_blank"><font size="4" color="DarkOrange">Tuyển mod box VnSharing Radio</font></a>
+    </li>
+    
+    
+    <li>
+      <a href="http://vnsharing.net/forum/showthread.php?t=711205" target="_blank"><font size="4" color="DarkOrange">Offline VnSharing Radio kỳ 105</font></a>
+    </li>
+  </ul>
+</div>
+<script>
+	function tick(){
+		$('#ticker_01 li:first').slideUp( function () { $(this).appendTo($('#ticker_01')).slideDown(); });
+	}
+	setInterval(function(){ tick () }, 10000);
+</script>
+</html>
